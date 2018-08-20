@@ -1,0 +1,60 @@
+1. tbcat
+    catcod   int   pk  autogene
+    catnam   carchar(100)
+
+2. tbqst
+   qstcod   int   p.k  autogen
+   qstdsc    varchar(500)
+   qstcatcod  int  fk
+   qstlvl     char(1)
+   qstpstdat  datetime
+   qstimg     varchar(50)
+                                                                        (model)
+3. tbopt
+   optcod   int p/k   autogen
+   optqstcod  int  f.k  
+   optdsc     varchar(500) 
+
+4. tbreg
+   regcod     int    pk   autogen
+   regeml     varchar(100)   unique
+    regpwd     varchar(100)
+    regdat      datetime
+    regrol       char(1)
+
+5. tbres
+   rescod      int    pk   autogen
+   resregcod    int    f.k
+   rescatcod    int    f.k
+   restotscr    int    
+   resscrach    int    
+   resdat        datetime
+
+
+create database tables,stored procedure(insert,update,delete,display,fnd)
+
+-----------------------------------------------------------------------------------------
+
+
+
+classes                     (controller)
+
+dbutil
+clscatprp
+clsqstprp
+clsoptprp
+
+intcat
+intqst
+intopt
+
+clscat implement intcat
+clsqst impements intqst
+
+
+
+
+
+
+
+
